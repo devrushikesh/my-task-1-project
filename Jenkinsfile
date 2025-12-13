@@ -38,7 +38,7 @@ pipeline{
 
         stage('Clean Agent'){
             steps {
-                sh "docker rmi ${IMAGE_NAME}:${IMAGE_TAG} || true"
+                sh "docker rmi ${ECR_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG} || true"
             }
         }
 
