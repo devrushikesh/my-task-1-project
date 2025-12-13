@@ -21,7 +21,7 @@ pipeline{
         }
         stage('Build') {
             steps {
-                sh "docker build -t ${IMAGE_NAME}:${IMAGE_TAG} ."
+                sh "docker build -t ${ECR_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG} ."
             }
         }
         stage('Login to ECR'){
