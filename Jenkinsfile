@@ -3,7 +3,7 @@
 pipeline{
     agent any
 
-    environments{
+    environment {
         AWS_REGION = 'ap-south-1'
         AWS_ACCOUNT = '759210286431'
         ECR_REGISTRY = "${AWS_ACCOUNT}.dkr.ecr.${AWS_REGION}.amazonaws.com"
