@@ -1,7 +1,7 @@
 
 
 pipeline{
-    agent { label 'ec2-node' }
+    agent any
 
     environment {
         AWS_REGION = 'ap-south-1'
